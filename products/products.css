@@ -1,0 +1,38 @@
+body{
+
+}
+header{
+padding: 30px;
+}
+header img{
+    max-width: 150px;
+}
+.profile-photo img{
+    width: 40px;
+    border-radius: 20px;
+}
+.header-button button{
+    padding:10px 33px;
+}
+.products-ul{
+    height: 100px;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.main-sec{
+    background-color: #f7f7f7;
+}
+.left-menu a{
+    font-weight: bold;
+    color: #161f93;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.left-menu a svg{
+    margin-right: 20px;
+    
+}
