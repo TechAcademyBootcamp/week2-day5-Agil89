@@ -43,12 +43,11 @@
         </div>
     </div>
     <section class="main-sec">
-
         <div class="row">
             <div class="col-3" style="background-color: white;">
                 <div class="left-menu nav flex-column nav-pills " id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                         aria-controls="v-pills-home" aria-selected="true">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
                             <g id="Group_2583" data-name="Group 2583" transform="translate(0 0)">
@@ -66,14 +65,14 @@
                                     transform="translate(-1659.775 -688.219)" fill="currentColor"></path>
                             </g>
                         </svg>Dashboard</a>
-                    <a class="nav-link" id="Dashboard" data-toggle="pill" href="#v-pills-profile" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="16px" height="13px" viewBox="0 0 15.6 13">
+                    <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                        role="tab" aria-controls="v-pills-profile" aria-selected="false"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16px" height="13px" viewBox="0 0 15.6 13">
                             <path id="Path_154" data-name="Path 154"
                                 d="M299.593,418.656l-3.148-4.494a.9.9,0,0,0-.572-.272.658.658,0,0,0-.573.272l-3.148,4.494h-3.435a.66.66,0,0,0-.716.677v.207l1.789,6.327a1.448,1.448,0,0,0,1.36,1.023h9.3a1.366,1.366,0,0,0,1.359-1.023l1.789-6.327v-.207a.659.659,0,0,0-.716-.677Zm-5.87,0,2.149-3,2.145,3Zm2.149,5.443a1.362,1.362,0,1,1,1.428-1.363,1.4,1.4,0,0,1-1.428,1.363Zm0,0"
                                 transform="translate(-288 -413.89)" fill="currentColor"></path>
                         </svg>Products</a>
-                    <a class="nav-link" id="products" data-toggle="pill" href="#v-pills-messages" role="tab"
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
                         aria-controls="v-pills-messages" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg"
                             width="13px" height="13px" viewBox="0 0 12.958 13">
                             <path id="Path_321" data-name="Path 321"
@@ -176,69 +175,139 @@
                         </svg>Logout</a>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="tab-content" id="" style="background-color: white;">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="products">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                            aria-labelledby="products">
-                            <ul class="products-ul nav nav-pills border">
-                                <li class="nav-item">
-                                    <a style="background-color:white; color: #161f8f;font-weight: bold;"
-                                        class="nav-link active" href="#">Products</a>
-                                </li>
-                                <li class="nav-item dropdown" style="background-color:#eeeeee; font-weight: bold;">
-                                    <a style=" color: #161f8f;" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                        href="#" role="button" aria-haspopup="true" aria-expanded="false">Category
-                                        Type</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Grocery</a>
-                                        <a class="dropdown-item" href="#">Women Cloths</a>
-                                        <a class="dropdown-item" href="#">Bags</a>
-                                        <a class="dropdown-item" href="#">Makeup</a>
 
+            <div class="sagteref col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                    </div>
+                    <div style="background-color: #f7f7f7;" class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <div class="row">
+                        <div class="col-12" style="background-color:white;">
+                            <ul class="products-ul nav nav-pills border bg">
+                                <div class="col-3">
+                                    <li class="nav-item">
+                                        <a style="background-color: white; color: #161f8f;font-weight: bold;"
+                                            class="nav-link active" href="#">Products</a>
+                                    </li>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="nav-item dropdown"
+                                                style="background-color:#eeeeee; font-weight: bold;">
+                                                <a style=" color: #161f8f;" class="nav-link dropdown-toggle"
+                                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                                    aria-expanded="false">Category
+                                                    Type</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Grocery</a>
+                                                    <a class="dropdown-item" href="#">Women Cloths</a>
+                                                    <a class="dropdown-item" href="#">Bags</a>
+                                                    <a class="dropdown-item" href="#">Makeup</a>
+
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item dropdown2"
+                                                style="background-color:#eeeeee; font-weight: bold;">
+                                                <a style=" color: #161f8f;" class="nav-link dropdown-toggle"
+                                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                                    aria-expanded="false">Price</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Highest to<br> Lowest</a>
+                                                    <a class="dropdown-item" href="#">Lowest to <br> Highest</a>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="col-6">
+                                            <li class="nav-item">
+                                                <input type="text" style="background-color: #eeeeee;"
+                                                    class="form-control" id="formGroupExampleInput"
+                                                    placeholder="Ex: Search By Name"></li>
+                                        </div>
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown2" style="background-color:#eeeeee; font-weight: bold;">
-                                    <a style=" color: #161f8f;" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                        href="#" role="button" aria-haspopup="true" aria-expanded="false">Price</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Highest to<br> Lowest</a>
-                                        <a class="dropdown-item" href="#">Lowest to <br> Highest</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <input type="text" style="background-color: #eeeeee;" class="form-control"
-                                        id="formGroupExampleInput" placeholder="Ex: Search By Name"></li>
+                                </div>
                             </ul>
+
                         </div>
-                        <div class="pic-div row d-flex justify-content-around">
-                            <div class="col-3 card"><img class="w-100" src="bl.jpg">
-                                <p style="color: #161f8f;font-weight: bold;">Bling Thing Liquid Lipcolour</p>
-                                <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
-                                <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$20</p>
+                    </div>
+
+                        <div class="row mt-3" style="background-color:#f7f7f7;">
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="bl.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Bling Thing Liquid Lipcolour</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$20</p>
+                                </div>
                             </div>
-                            <div class="col-3 card"><img class="w-100" src="fanta.jpg">
-                                <p style="color: #161f8f;font-weight: bold;">Fanta</p>
-                                <p style="font-size: 13px;opacity: 0.7;">500 ml</p>
-                                <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$1.2</p>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="fanta.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Fanta</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">500 ml</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$1.2</p>
+                                </div>
                             </div>
-                            <div class="col-3 card"><img class="w-100" src="red_bull.jpg">
-                                <p style="color: #161f8f;font-weight: bold;">Red Bull Energy Drink</p>
-                                <p style="font-size: 13px;opacity: 0.7;">200 ml</p>
-                                <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$2.2</p>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="red_bull.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Red Bull Energy Drink</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">200 ml</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$2.2</p>
+                                </div>
                             </div>
-                            <div class="col-3 card"><img class="w-100" src="tayto.jpg">
-                                <p style="color: #161f8f;font-weight: bold;">Tayto Pickled Onion</p>
-                                <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
-                                <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$0.72</p>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="tayto.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Tayto Pickled Onion</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$0.72</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="laundry.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Woolite Gentle Cycle</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$21</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="milk.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">The Pantry Icing Sugar</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">2 lb</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$8</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="gatorate.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Gatorate Thirst Quencher Powder Drink
+                                    </p>
+                                    <p style="font-size: 13px;opacity: 0.7;">250 ml</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$4</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card"><img class="w-100 align-items-center" style="height: 220px;"
+                                        src="jacket.jpg">
+                                    <p style="color: #161f8f;font-weight: bold;">Deyan Waist Coat</p>
+                                    <p style="font-size: 13px;opacity: 0.7;">1 pc(s)</p>
+                                    <p style="color: #00c58d;font-weight: bold;font-size: 15px;">$130</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">...</div>
+                        aria-labelledby="v-pills-messages-tab">
+                        ...
+                    </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                         aria-labelledby="v-pills-settings-tab">
                         <ul class="products-ul nav nav-pills border">
@@ -269,156 +338,156 @@
                                 <input type="text" style="background-color: #eeeeee;" class="form-control"
                                     id="formGroupExampleInput" placeholder="Ex: Search By Address"></li>
                         </ul>
-                    
-                    <div class="table ml-4">
-                        <table>
-                            <tr >
-                                <th class="border"><input type="checkbox"></th>
-                                <th class="border">ID</th>
-                                <th class="border">Customer ID</th>
-                                <th class="border">Time</th>
-                                <th class="border">Delivery Address</th>
-                                <th class="border">Amount</th>
-                                <th class="border">Payment Method</th>
-                            </tr>
-                            <tr class=>
-                                <td><input type="checkbox"></td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$249.7</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>12th Apr 2020</td>
-                                <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-                                <td>$339</td>
-                                <td>Cash On Delivery</td>
-                            </tr>
-                        </table>
+
+                        <div class="table ml-4">
+                            <table>
+                                <tr>
+                                    <th class="border"><input type="checkbox"></th>
+                                    <th class="border">ID</th>
+                                    <th class="border">Customer ID</th>
+                                    <th class="border">Time</th>
+                                    <th class="border">Delivery Address</th>
+                                    <th class="border">Amount</th>
+                                    <th class="border">Payment Method</th>
+                                </tr>
+                                <tr class=>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$249.7</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>12th Apr 2020</td>
+                                    <td class="adress">29 Eve Street, 543 Evenue Road, Ny 87876</td>
+                                    <td>$339</td>
+                                    <td>Cash On Delivery</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
