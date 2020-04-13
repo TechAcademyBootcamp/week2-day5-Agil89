@@ -1,5 +1,6 @@
 body{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    overflow-x: hidden;
 }
 header{
 padding: 30px;
@@ -67,4 +68,12 @@ tr{
 }
 .adress{
     text-align: center;
+}
+th , td {
+    padding: 0.25rem;
+}
+th{
+    background: white;
+    position: sticky;
+    top:0;
 }
