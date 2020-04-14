@@ -38,13 +38,16 @@ header img{
     margin-right: 20px;
     
 }
+.for-svg svg{
+    cursor: pointer;
+}
 .pic-div div img{
     with:20%;
 }
 .zvonok{
     right: -100%;
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index:1100;
     flex-direction: column;
     align-items: center;
@@ -76,4 +79,44 @@ th{
     background: white;
     position: sticky;
     top:0;
+}
+.right-bar{
+    display: flex;
+    right:-100%;
+    transition: 1s;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    width:100%;
+    z-index: 3000;
+    background-color: white;
+    
+}
+
+.right-bar.show2{
+    right:0;
+}
+.x-button{
+    color: red;
+    top:0;
+    width: 40%;
+    z-index: 2000;
+}
+.add-products{
+    width:90%;
+    color: green;
+    background-color: #f7f7f7;
+    align-items: center;
+    z-index: 200;
+    top:0;
+    bottom: 0;
+   
+    
+}
+.x{
+    cursor: pointer;
+}
+.add-products header{
+    height: 50px;
+    align-items: center;
 }
