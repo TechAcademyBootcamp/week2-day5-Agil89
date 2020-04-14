@@ -89,7 +89,9 @@ th{
     bottom: 0;
     width:100%;
     z-index: 3000;
-    background-color: white;
+
+
+   
     
 }
 
@@ -100,7 +102,9 @@ th{
     color: red;
     top:0;
     width: 40%;
-    z-index: 2000;
+    border: white;
+    
+   
 }
 .add-products{
     width:90%;
@@ -110,6 +114,7 @@ th{
     z-index: 200;
     top:0;
     bottom: 0;
+    
    
     
 }
