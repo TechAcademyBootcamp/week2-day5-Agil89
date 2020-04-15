@@ -200,3 +200,64 @@ th, td {
     }
     
 }
+.nav-menu-dis{
+    display: none;
+}
+.nav-linkd a{
+    color: #161f6a;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+.nav-linkd a:hover{
+    text-decoration: none;
+    color: #00c58d;
+}
+.hamb-menu{
+    left: -100%;
+    display: flex;
+    position: absolute;
+    z-index:1100;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    width: 60%;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    transition: 1s;
+
+}
+.back-row{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.bck-r{
+    color: grey;
+}
+.hamb-menu div{
+    font-size: 18px;
+    color: #161f6a;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 3;
+}
+
+.hamb-menu.showi{
+    left: 0;
+}
+@media screen and (max-width: 900px){ 
+    
+    .nav-menu-dis{
+        display: block;
+    }
+    
+}
