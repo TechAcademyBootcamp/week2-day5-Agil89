@@ -55,7 +55,6 @@ header img{
     width: 350px;
     height: 200px;
     background-color: white;
-    display: block;
     
 }
 .zvonok.show{
@@ -83,16 +82,40 @@ th{
 .right-bar{
     display: flex;
     right:-100%;
-    transition: 1s;
+    transition: 0.3s;
     position: fixed;
     top:0;
     bottom: 0;
     width:100%;
     z-index: 3000;
-
-
+}
+.picture{
+    width: 200px;
+    height: 150px;
+    display:block;
+    position: absolute;
+    background-color: white;
+    right: -100%;
+    z-index: 1100;
+    justify-content: space-around;
+    box-shadow: 1px 1px 10px 1px #888888;
    
+}
+.picture.shows{
+    right: 50px;
+}
+.picture-buttons{
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+.picture-buttons a{
+    color: #666d92;
+    font-weight: bold;
     
+}
+.picture-buttons a:hover{
+    text-decoration: none;
+    color: #00c58d;
 }
 
 .right-bar.show2{
@@ -102,13 +125,16 @@ th{
     color: red;
     top:0;
     width: 40%;
-    border: white;
+    border: black;
+    background-color: black;
+    opacity: 0.4;
     
    
 }
 .add-products{
+
     width:90%;
-    color: green;
+    
     background-color: #f7f7f7;
     align-items: center;
     z-index: 200;
@@ -120,8 +146,23 @@ th{
 }
 .x{
     cursor: pointer;
+    opacity: 1;
+    position: relative;
+    left:-50px;
+    color: white;
+    width: 20px;
+    top: -20px;
+    
 }
 .add-products header{
     height: 50px;
     align-items: center;
 }
+.nav-pills .nav-link.active{
+    color: rgb(0, 212, 181) !important;
+    background: rgb(247, 247, 247) !important;
+    }
+    th, td {
+        text-align: left;
+        padding: 50px;
+      }
