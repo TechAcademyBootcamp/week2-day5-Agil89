@@ -207,8 +207,8 @@
                     </div>
                 </div>
                 <div class="items-products mx-auto d-flex flex-column justify-content-between h-75 align-items-center">
-                    <div>
-                        <p class="mt-5" style="font-weight: bold; font-size: 15px;opacity: 0.7;">No products found</p>
+                    <div id="card_products" style="overflow-y: auto;">
+                        <p class="mt-5 " style="font-weight: bold; font-size: 15px;opacity: 0.7;">No products found</p>
                     </div>
                     <div class="mt-5" style="width: 100%;"><a
                             style="font-weight: bold; margin-left: 130px;margin-bottom: 15px;text-decoration: none; color: #009e7f;"
@@ -496,14 +496,18 @@
                             <div class="row">
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><button type="button" class="btn" data-toggle="modal"
-                                            data-target="#banana"><img src="banana.png">
-                                            <p class="" style="margin-left:-200px;font-size: 15px;"><b>Banana</b><br>8
-                                                pc(s)</p><br>
+                                            data-target="#banana">
+                                            <img class="" src="banana.png">
+                                            <p class="product_name" style="font_weight:bold; margin-left:-200px;font-size: 15px;">
+                                                Banana<br>8
+                                                pc(s)
+                                            </p><br>
                                             <div
                                                 class="price d-flex justify-content-between align-items-center mt-2 ml-2 mr-2">
-                                                <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                                <div class="price-number" style="color: #009e7f;font-weight: bold;">8$
+                                                </div>
                                                 <div class="price-button">
-                                                    <span class="btn"><b><svg xmlns="
+                                                    <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                                 viewBox="0 0 14.4 12">
                                                                 <g data-name="Group 120"
@@ -522,13 +526,13 @@
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><button type="button" class="btn" data-toggle="modal"
                                             data-target="#onion"><img src="onion.png">
-                                            <p class="" style="margin-left:-200px;font-size: 15px;"><b>Onion</b><br>10
+                                            <p class="product_name" style="margin-left:-200px;font-size: 15px;"><b>Onion</b><br>10
                                                 lb</p><br>
                                             <div
                                                 class="price d-flex justify-content-between align-items-center mt-2 ml-2 mr-2">
-                                                <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                                <div class="price-number" style="color: #009e7f; font-weight: bold;"><span class="fix-price">3</span>$</div>
                                                 <div class="price-button">
-                                                    <span class="btn"><b><svg xmlns="
+                                                    <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                                 viewBox="0 0 14.4 12">
                                                                 <g data-name="Group 120"
@@ -547,13 +551,13 @@
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><button type="button" class="btn" data-toggle="modal"
                                             data-target="#blue-grape"><img src="grape.png">
-                                            <p class="" style="margin-left:-200px;font-size: 15px;"><b>Blue
+                                            <p class="product_name" style="margin-left:-200px;font-size: 15px;"><b>Blue
                                                     Grapes</b><br>10 lb</p><br>
                                             <div
                                                 class="price d-flex justify-content-between align-items-center mt-2 ml-2 mr-2">
-                                                <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                                <div class="price-number" style="color: #009e7f; font-weight: bold;"><span class="fix-price">9</span>$</div>
                                                 <div class="price-button">
-                                                    <span class="btn"><b><svg xmlns="
+                                                    <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                                 viewBox="0 0 14.4 12">
                                                                 <g data-name="Group 120"
@@ -571,12 +575,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="coconut.png">
-                                        <p class="ml-4"><b>Coconut</b><br>1 pc(s)</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Coconut</b><br>1 pc(s)</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;font-weight: bold;"><span class="fix-price">5</span>$</div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -593,12 +597,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="garlic.png">
-                                        <p class="ml-4"><b>Garlic</b><br>15 lb</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Garlic</b><br>15 lb</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;"><b>12$</b></div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -615,12 +619,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="guava.png">
-                                        <p class="ml-4"><b>Guava</b><br>20 lb</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Guava</b><br>20 lb</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;"><b>10$</b></div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -637,12 +641,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="lemon.png">
-                                        <p class="ml-4"><b>Lemon</b><br>4 pc(s)</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Lemon</b><br>4 pc(s)</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;"><b>6$</b></div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -659,12 +663,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="orange.png">
-                                        <p class="ml-4"><b>Orange</b><br>20 lb</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Orange</b><br>20 lb</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;"><b>4$</b></div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -681,12 +685,12 @@
                                 </div>
                                 <div class="col-6 col-md-4 mt-4">
                                     <div class="card"><img src="apple.png">
-                                        <p class="ml-4"><b>Green Apple</b><br>20 lb</p><br>
+                                        <p class="product_name" style="padding-left: 20px;"><b>Green Apple</b><br>20 lb</p><br>
                                         <div
                                             class="price d-flex justify-content-between align-items-center mt-4 ml-4 mr-4">
-                                            <div class="price-number" style="color: #009e7f;"><b>8$</b></div>
+                                            <div class="price-number" style="color: #009e7f;"><b>5$</b></div>
                                             <div class="price-button">
-                                                <span class="btn"><b><svg xmlns="
+                                                <span class="btn add_to_cart"><b><svg xmlns="
                                                 http://www.w3.org/2000/svg" width="14.4" height="12"
                                                             viewBox="0 0 14.4 12">
                                                             <g data-name="Group 120"
@@ -800,36 +804,40 @@
                             <div><img style="width: 100%;" src="banana_thumb.png">
                             </div>
                             <ul class="d-flex flex-row align-items-center justify-content-around">
-                                <li style="max-width: 70px;list-style: none;" ><img style="width: 100%;" src="banana_thumb.png"></li>
-                                <li style="max-width: 70px;list-style: none;" ><img style="width: 100%;" src="banana_thumb.png"></li>
-                                <li style="max-width: 70px;list-style: none;" ><img style="width: 100%;" src="banana_thumb.png"></li>
+                                <li style="max-width: 70px;list-style: none;"><img style="width: 100%;"
+                                        src="banana_thumb.png"></li>
+                                <li style="max-width: 70px;list-style: none;"><img style="width: 100%;"
+                                        src="banana_thumb.png"></li>
+                                <li style="max-width: 70px;list-style: none;"><img style="width: 100%;"
+                                        src="banana_thumb.png"></li>
                             </ul>
                         </div>
-                   
-                    <div class="body-2 col-6">
-                        <h3 class="mt-4 mb-4" style="font-weight: bold;">Banana</h3>
-                        <p style="font-size: 10px;opacity: 0.7;" class="mb-4">8 pc(s)</p>
-                        <p style="opacity: 0.8;" class="mb-4">A banana is an edible fruit – botanically a berry –
-                            produced by several kinds of large
-                            herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking
-                            may be called plantains distinguishing them from dessert bananas.</p>
-                        <h4 style="color:#009e7f; font-size:20px; font-weight:bold" class="mb-4">$10</h4>
-                        <span class="btn mb-4"><b><svg xmlns="
+
+                        <div class="body-2 col-6">
+                            <h3 class="mt-4 mb-4" style="font-weight: bold;">Banana</h3>
+                            <p style="font-size: 10px;opacity: 0.7;" class="mb-4">8 pc(s)</p>
+                            <p style="opacity: 0.8;" class="mb-4">A banana is an edible fruit – botanically a berry –
+                                produced by several kinds of large
+                                herbaceous flowering plants in the genus Musa. In some countries, bananas used for
+                                cooking
+                                may be called plantains distinguishing them from dessert bananas.</p>
+                            <h4 style="color:#009e7f; font-size:20px; font-weight:bold" class="mb-4">$10</h4>
+                            <span class="btn mb-4"><b><svg xmlns="
                             http://www.w3.org/2000/svg" width="14.4" height="12" viewBox="0 0 14.4 12">
-                                    <g data-name="Group 120" transform="translate(-288 -413.89)">
-                                        <path data-name="Path 154" fill="currentColor"
-                                            d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0">
-                                        </path>
-                                    </g>
-                                </svg>Cart</b>
-                        </span>
-                        <div class="fr-fr d-flex justify-content-around mt-4 mb-4">
-                            <a href="" style="color: black; text-decoration: none; font-size: 15px;">Fruits
-                                Vegetables</a>
-                            <a href="" style="color: black; text-decoration: none;font-size: 15px;">Fruits</a>
+                                        <g data-name="Group 120" transform="translate(-288 -413.89)">
+                                            <path data-name="Path 154" fill="currentColor"
+                                                d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0">
+                                            </path>
+                                        </g>
+                                    </svg>Cart</b>
+                            </span>
+                            <div class="fr-fr d-flex justify-content-around mt-4 mb-4">
+                                <a href="" style="color: black; text-decoration: none; font-size: 15px;">Fruits
+                                    Vegetables</a>
+                                <a href="" style="color: black; text-decoration: none;font-size: 15px;">Fruits</a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -899,6 +907,70 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script>
+        var buttons = document.getElementsByClassName('add_to_cart');
+        var counter = 1;
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                var parent_of_cart = this.parentElement;
+                var test_parent =this.closest('.card');
+            
+                var fixed_price = test_parent.getElementsByClassName('fix-price')[0].innerHTML;
+
+
+                var big_parent = parent_of_cart.parentElement;
+            
+                var all_parent = big_parent.parentElement;
+                var card_image = all_parent.children[0].getAttribute('src');
+              
+
+                for (var i = 0; i < big_parent.children.length; i++) {
+                    if (big_parent.children[i].className == 'price-number') {
+                        var product_price = big_parent.children[i].innerHTML;
+                    }
+                }
+                for (var i = 0; i < all_parent.children.length; i++) {
+                    if (all_parent.children[i].className == 'product_name') {
+                        var product_name = all_parent.children[i].innerHTML;
+                    }
+                }
+                
+                var acc = counter;
+                var added_products = document.getElementById('card_products').children;
+                for(var i=0;i<added_products.length;i++){
+
+                    if(added_products[i].getAttribute('card_title')== product_name){
+                        var all=document.getElementById(`${product_name}`);
+                        counter = all.getElementsByClassName('products-count')[0].innerHTML;
+                        console.log(counter);
+                        counter = acc + 1 ;
+                        console.log(counter);
+                        return false;
+                    }
+                }
+                
+                
+
+                document.getElementById('card_products').innerHTML += `<div class="card mb-3" id='${product_name}' card_title="${product_name}" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="${card_image}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      <span class="products-count">${counter}</span>
+        <h6 class="card-title">${product_name}</h6>
+        <p class="card-text">${product_price}</p>
+      </div>
+    </div>
+  </div>
+</div>`
+                });
+            }
+
+
+    </script>
 </body>
 
 </html>
